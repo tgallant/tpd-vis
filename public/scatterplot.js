@@ -1,8 +1,9 @@
 d3.csv("data/yesterday.csv", function(error, allData) {
+        return;
         var width = 600,
             height = 600;
         
-        var xExtent = d3.extent(data, function(d) { return d["DATE:q);
+        var xExtent = d3.extent(data, function(d) { return moment() - moment(d["DATE"]); } );
         var yExtent = d3.extent(data, );
 
         var xScale = d3.scale.linear().domain(xExtent).range([30, 570]);
