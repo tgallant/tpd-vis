@@ -4,7 +4,7 @@ d3.csv("data/yesterday.csv", function(error, allData) {
             height = 600;
         
         var xExtent = d3.extent(data, function(d) { return moment() - moment(d["DATE"]); } );
-        var yExtent = d3.extent(data, );
+//        var yExtent = d3.extent(data, );
 
         var xScale = d3.scale.linear().domain(xExtent).range([30, 570]);
         var yScale = d3.scale.linear().domain(yExtent).range([570, 30]);
