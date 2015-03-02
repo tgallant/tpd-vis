@@ -5,8 +5,8 @@ module.exports = function (app) {
   app.use('/', router);
 };
 
-router.get('/', function (req, res, next) {
-  res.render('index', {
-    title: 'Generator-Express MVC'
+router.get('/list', function (req, res, next) {
+  res.render('list', {
+    title: 'Incident Listing'
   });
 });
